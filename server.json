@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.1036007003-wq/linkedin-marketing",
+  "description": "MCP Server for LinkedIn marketing automation \u2014 schedule posts, analyze connections, manage company pages, and track professional network growth.",
+  "repository": {
+    "url": "https://github.com/1036007003-wq/linkedin-marketing-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@1036007003-wq/linkedin-marketing-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LINKEDIN_ACCESS_TOKEN",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string",
+          "description": "LinkedIn OAuth2 Access Token"
+        },
+        {
+          "name": "LINKEDIN_CLIENT_ID",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string",
+          "description": "LinkedIn App Client ID"
+        }
+      ]
+    }
+  ]
+}
