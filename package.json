@@ -1,0 +1,23 @@
+{
+  "name": "linkedin-marketing-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server for LinkedIn marketing automation — search profiles, analyze companies, draft connection requests, optimize posts. Free + Premium.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "linkedin-marketing-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": ["mcp", "linkedin", "marketing", "b2b", "automation"],
+  "author": "1036007003-wq",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
